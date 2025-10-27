@@ -7,10 +7,10 @@ void print_numbers(void)
 {
 	int i;
 
+	/* Boucle sur les chiffres de 0 à 9 */
 	for (i = 0; i <= 9; i++)
-	{
-		_putchar(i + '0'); /* Convertit i en caractere ASCII */
-	}
+		_putchar(i + '0');
 
-	_putchar('\n'); /* Retour a la ligne la fin */
+	/* Affiche le retour à la ligne à la fin */
+	_putchar('\n');
 }
