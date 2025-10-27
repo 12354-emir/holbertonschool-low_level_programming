@@ -8,7 +8,9 @@ void print_numbers(void)
 	int i;
 
 	for (i = 0; i <= 9; i++)
-		_putchar(i + '0'); /* Convertit i en caractère ASCII */
+	{
+		_putchar(i + '0'); /* Convertit i en caractere ASCII */
+	}
 
-	_putchar('\n'); /* Retour à la ligne à la fin */
+	_putchar('\n'); /* Retour a la ligne la fin */
 }
