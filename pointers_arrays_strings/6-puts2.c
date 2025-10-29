@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- * puts2 - imprime un caractere sur deux d'une chaine
- * @str: chaine a traiter
+ * puts2 - imprime un caractère sur deux d'une chaîne
+ * @str: chaîne à traiter
  *
  * Return: rien
  */
