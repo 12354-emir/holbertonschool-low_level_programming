@@ -1,19 +1,21 @@
 #include "main.h"
 
 /**
- * puts2 - imprime un caractere sur deux d'une chaine
- * @str: chaine a traiter
+ * puts2 - Affiche un caractere sur deux d'une chaine
+ * @str: chaine a afficher
  *
- * Return: rien
+ * Description: Cette fonction affiche un caractere sur deux
+ * à partir du debut de la chaine passee en  parametre, puis
+ * ajoute un saut de ligne a la fin.
  */
 void puts2(char *str)
 {
-	int i = 0;
+	int i;
 
-	while (str[i] != '\0')
+	for (i = 0; str[i] != '\0'; i++)
 	{
-		_putchar(str[i]);
-		i += 2;
+		if (i % 2 == 0)
+			_putchar(str[i]);
 	}
 	_putchar('\n');
 }
