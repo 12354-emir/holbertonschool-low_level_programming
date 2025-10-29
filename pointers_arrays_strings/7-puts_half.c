@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- * puts_half - affiche la seconde moitié d'une chaîne
- * @str: la chaîne à afficher
+ * puts_half - affiche la seconde moitie d'une chaine
+ * @str: la chaine a afficher
  */
 void puts_half(char *str)
 {
