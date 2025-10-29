@@ -2,7 +2,7 @@
 
 /**
  * _puts - affiche une chaîne de caractères suivie d'un retour à la ligne
- * @str: la chaîne de caractères à afficher
+ * @str: chaîne de caractères à afficher
  */
 void _puts(char *str)
 {
