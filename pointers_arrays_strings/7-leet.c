@@ -1,22 +1,29 @@
 #include "main.h"
 
-/* 
+/**
  * leet - encode une chaine de caracteres en 1337
- * Remplace a/A->4, e/E->3, o/O->0, t/T->7, l/L->1
- * Retourne la chaine modifie
+ * @s: chaine a encoder
+ *
+ * Remplace : a/A->4, e/E->3, o/O->0, t/T->7, l/L->1
+ * Return: la chaine modifie
  */
 char *leet(char *s)
 {
 	int i, j;
-	char lettres[] = "aAeEoOtTlL";
-	char chiffres[] = "4433007711";
+	char letters[] = "aAeEoOtTlL";
+	char numbers[] = "4433007711";
 
-	for (i = 0; s[i]; i++)
-		for (j = 0; lettres[j]; j++)
-			if (s[i] == lettres[j])
+	for (i = 0; s[i] != '\0'; i++)
+	{
+		for (j = 0; letters[j] != '\0'; j++)
+		{
+			if (s[i] == letters[j])
 			{
-				s[i] = chiffres[j];
+				s[i] = numbers[j];
 				break;
 			}
+		}
+	}
+
 	return (s);
 }
