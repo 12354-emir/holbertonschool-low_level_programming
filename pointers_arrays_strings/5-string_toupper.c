@@ -1,21 +1,22 @@
 #include "main.h"
 
 /**
- * string_toupper - Convertit toutes les lettres minuscules d'une chaine en majuscules
- * @s: La chaine a modifier
+ * string_toupper - convertit toutes les lettres minuscules
+ * de la chaine s en majuscules
+ * @s: la chaine a modifier
  *
- * Return: Pointeur vers la chaine modifie
+ * Return: pointeur vers la chaine modifie
  */
 char *string_toupper(char *s)
 {
-    int i = 0;
+	int i;
 
-    while (s[i] != '\0')
-    {
-        if (s[i] >= 'a' && s[i] <= 'z')
-            s[i] = s[i] - 32;
-        i++;
-    }
-
-    return (s);
+	i = 0;
+	while (s[i] != '\0')
+	{
+		if (s[i] >= 'a' && s[i] <= 'z')
+			s[i] = s[i] - 32;
+		i++;
+	}
+	return (s);
 }
